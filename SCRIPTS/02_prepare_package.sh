@@ -126,6 +126,9 @@ cp -rf ../lede/target/linux/x86/patches-6.6/996-intel-igc-i225-i226-disable-eee.
 cp -rf ../PATCH/kernel/btf/* ./target/linux/generic/hack-6.6/
 
 ### 获取额外的基础软件包 ###
+git clone https://github.com/sbwml/luci-app-alist.git package/new/luci-app-alist
+git clone https://github.com/gngpp/luci-theme-design.git  package/new/luci-theme-design
+
 # 更换为 ImmortalWrt Uboot 以及 Target
 rm -rf ./target/linux/rockchip
 cp -rf ../immortalwrt_24/target/linux/rockchip ./target/linux/rockchip
